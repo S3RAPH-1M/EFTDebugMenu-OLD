@@ -1,0 +1,7 @@
+packages
+TestModule/bin
+TestModule/obj
+.vs/
+.vs/TestModule/v16/.suo
+.editorconfig
+.gitattributes
