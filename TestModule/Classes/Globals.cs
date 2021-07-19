@@ -6,7 +6,6 @@ namespace SPTarkov.TestModule.Classes
 {
     public static class Globals
     {
-        public static bool Enabled = false;
         public static bool IsInGameplayMap = false;
         public static bool IsInGodMode = false;
         public static string MenuTitle = "nexus#4880 - Test Module";

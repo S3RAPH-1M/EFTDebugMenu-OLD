@@ -7,7 +7,6 @@ namespace SPTarkov.TestModule.Classes
 {
     public static class RemoveObject
     {
-        public static void Initialize() => ConsoleScreen.Commands.Add(new GClass1799("removeobject", RemoveObjectCommand));
 
         public static void Remove()
         {

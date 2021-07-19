@@ -20,16 +20,8 @@ namespace SPTarkov.TestModule
 
         private void Start()
         {
-            Core.Instance EmuInstance = GameObject.FindObjectOfType<Core.Instance>();
-            Globals.Enabled = EmuInstance != null;
-            if (!Globals.Enabled)
-            {
-                Application.Quit(42069);
-            }
-
             name = "nexus#4880";
             SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
-            RemoveObject.Initialize();
         }
 
         private void Update()
@@ -39,10 +31,6 @@ namespace SPTarkov.TestModule
                 return;
             }
 
-            if (!Globals.Enabled)
-            {
-                return;
-            }
             // All of this should all be done within like 2 seconds of seeing the main menu
             if (Globals.consoleScreen == null)
             {
@@ -143,10 +131,6 @@ namespace SPTarkov.TestModule
                 return;
             }
 
-            if (!Globals.Enabled)
-            {
-                return;
-            }
 
             if (!Globals.IsInGameplayMap)
             {
@@ -185,10 +169,6 @@ namespace SPTarkov.TestModule
 
         private void SceneManager_activeSceneChanged(Scene oldScene, Scene newScene)
         {
-            if (!Globals.Enabled)
-            {
-                return;
-            }
 
             Globals.IsInGameplayMap = MUtils.CheckForGameplayMap(newScene.name);
             if (Globals.consoleScreen != null)

@@ -32,9 +32,9 @@
             }
         }
 
-        private static void ActiveHealthController_HealthChangedEvent(EBodyPart arg1, float arg2, GStruct226 arg3) => Globals.localPlayer.Heal(arg1, 100f);
+        private static void ActiveHealthController_HealthChangedEvent(EBodyPart arg1, float arg2, GStruct241 arg3) => Globals.localPlayer.Heal(arg1, 100f);
 
-        private static void ActiveHealthController_ApplyDamageEvent(EBodyPart arg1, float arg2, GStruct226 arg3) => Globals.localPlayer.Heal(arg1, 100f);
+        private static void ActiveHealthController_ApplyDamageEvent(EBodyPart arg1, float arg2, GStruct241 arg3) => Globals.localPlayer.Heal(arg1, 100f);
 
         // Prevents dehydration
         private static void ActiveHealthController_HydrationChangedEvent(float obj) => Globals.localPlayer.ActiveHealthController.ChangeHydration(100f);
